@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+      <style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,400&display=swap');
+          *{
+              font-family: 'Poppins', sans-serif;
+              margin: 0px;
+              padding: 0px;
+              box-sizing: border-box;
+              scroll-behavior: smooth;
+              scroll-padding-top: 1rem;
+              text-decoration: none;
+              list-style: none;
+          }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{ 
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            /* z-index: 1000; */
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            /* margin: 5px; */
+            padding: 18px 100px;
+            background: #a18751;
+
+        }
+        :root{
+    --text-color: #000000;
+    --main-color: aqua;
+}
+        .logo{
+            color: var(--text-color);
+            display: inline-block;
+            font-size: 50px;
+            font-weight: 100;
+            font-family: 'Open Sans', sans-serif;
+            
+        }
+        .logo span{
+            color:var(--main-color);
+            
+        }
+        .navbar{
+            position: relative;
+            display: flex;
+        }
+        .navbar a{
+            font-size: 1rem;
+            padding: 10px 20px;
+            font-weight: 1000;
+            color: var(--text-color);
+        }
+        
+        .navbar a:hover{
+            color: var(--main-color);
+        }
+
+        #menu-icon{
+            font-size: 2rem;
+            cursor: pointer;
+            display: none;
+
+        }
+        .shop-container{
+            position: relative;
+            top: 100px;
+            background-position: right;
+            align-items: center;
+            padding: 50px 10%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            width: 240px;
+
+        }
+        .box img{
+            width: 100%;
+            border-radius: 15px;
+            transition: transform .2s;
+            height: auto;
+
+        }
+        .box img:hover{
+            transform: scale(1.1);
+
+        }
+        .box .bx-cart{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><b>X</b><Span>book</Span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+            <ul class="navbar">
+                <a href="#home"><li>Home</li></a>
+                <a href="#shop"><li>Shop</li></a>
+                <a href="#new"><li>New Arrival</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#contact"><li>Contact Us</li></a>
+            </ul>
+    </header>
+    <div class="shop-container">
+        <div class="box">
+            <div class="box-img">
+                <img src="img/img1.jpg" alt="" >
+            </div>
+            <div class="title-price">
+                <h3>Sofa<br></h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+            </div>    
+            <span>₹ 14500 </span>
+            <i class="bx bx-cart" ></i>  
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="img/img1.jpg" alt="" >
+            </div>
+            <div class="title-price">
+                <h3>Sofa<br></h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+            </div>    
+            <span>₹ 14500 </span>
+            <i class="bx bx-cart" ></i>  
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="img/img1.jpg" alt="" >
+            </div>
+            <div class="title-price">
+                <h3>Sofa<br></h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+            </div>    
+            <span>₹ 14500 </span>
+            <i class="bx bx-cart" ></i>  
+        </div>
+</body>
+</html>
